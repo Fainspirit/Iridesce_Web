@@ -1,5 +1,6 @@
 ---
 import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
 import '../styles/main.css';
 
 const title = "Building a Game with Astro";
@@ -38,9 +39,11 @@ const date = new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'lo
 
                     <hr style="margin: 2rem 0; border: none; border-top: 1px solid #e2e8f0;" />
 
-                    <p>{`Enjoy reading about {title}!`}
+                    <p>{`Enjoy reading about {title}!`}</p>
                 </div>
             </article>
         </main>
+
+        <Footer />
     </body>
 </html>

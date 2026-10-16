@@ -1,5 +1,9 @@
 ---
-export const title = 'Building a Game with Astro - Blog Post';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import '../styles/main.css';
+
+const title = "Building a Game with Astro";
 ---
 
 <html lang="en">
@@ -39,12 +43,9 @@ export const title = 'Building a Game with Astro - Blog Post';
                     <h2>Conclusion</h2>
                     <p>Enjoy reading about Astro for game development!</p>
                 </section>
-
             </article>
         </main>
 
-        <footer class="footer">
-            <p>&copy; 2026 Startail.</p>
-        </footer>
+        <Footer />
     </body>
 </html>

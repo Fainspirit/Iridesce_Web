@@ -1,19 +1,22 @@
 ---
-export const title = 'Development Log: Game and Shock - Blog Post';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const title = "Development Log: Game and Shock";
 ---
 
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{`Development Log: Game and Shock - Iridesce`}</title>
+        <title>{`{title} - Iridesce`}</title>
     </head>
     <body>
         <Header />
 
         <main style="max-width:800px;margin:0 auto;padding:2rem;">
             <article style="max-width:800px;margin:0 auto;padding:2rem;">
-                <h1>Development Log: Game and Shock</h1>
+                <h1>{`{title}`}</h1>
                 <p>A behind-the-scenes look at making an arcade game about defending monuments.</p>
 
                 <hr style="margin:2rem 0;border:none;border-top:1px solid #e2e8f0;" />
@@ -47,5 +50,7 @@ export const title = 'Development Log: Game and Shock - Blog Post';
                 </section>
             </article>
         </main>
+
+        <Footer />
     </body>
 </html>

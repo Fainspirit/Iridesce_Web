@@ -1,5 +1,6 @@
 ---
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 
 export const title = 'About - Startail';
 ---
@@ -15,8 +16,7 @@ export const title = 'About - Startail';
 
         <main class="about-content">
             <h1>About Me</h1>
-                <p>I'm Startail, a developer and creative maker.</p>
-            </section>
+            <p>I'm Startail, a developer and creative maker.</p>
 
             <section class="about-section">
                 <h2>What I Do</h2>
@@ -46,8 +46,6 @@ export const title = 'About - Startail';
             </section>
         </main>
 
-        <footer class="footer">
-            <p>&copy; 2026 Startail.</p>
-        </footer>
+        <Footer />
     </body>
 </html>
