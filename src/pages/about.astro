@@ -1,0 +1,53 @@
+---
+import Header from '../components/Header.astro';
+
+export const title = 'About - Startail';
+---
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{`About - Iridesce`}</title>
+    </head>
+    <body>
+        <Header />
+
+        <main class="about-content">
+            <h1>About Me</h1>
+                <p>I'm Startail, a developer and creative maker.</p>
+            </section>
+
+            <section class="about-section">
+                <h2>What I Do</h2>
+                <div class="about-grid">
+                    <article>
+                        <h3>🎮 Game Development</h3>
+                        <p>Create indie games on itch.io including action RPGs, arcade titles, and puzzle adventures.</p>
+                    </article>
+                    <article>
+                        <h3>🎨 Digital Art</h3>
+                        <p>Create digital art and showcase my creative work in galleries and exhibitions.</p>
+                    </article>
+                    <article>
+                        <h3>💻 Web Development</h3>
+                        <p>Build personal websites and static sites using modern tools like Astro.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="about-section">
+                <h2>Contact</h2>
+                <p>Interested in working together or just want to say hi?</p>
+                <div class="contact-links">
+                    <a href="https://fainspirit.itch.io" target="_blank" rel="noopener noreferrer">🔗 itch.io Profile</a>
+                    <a href="mailto:your@email.com">✉️ Send Email</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Startail.</p>
+        </footer>
+    </body>
+</html>
