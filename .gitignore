@@ -37,3 +37,6 @@ npm-debug.log*
 
 # Start script backup
 start-server.bat~
+
+# Claude
+.claude

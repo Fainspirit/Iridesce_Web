@@ -1,29 +1,45 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-
-export const title = 'Games - Startail';
 ---
 
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{`My Games - Iridesce`}</title>
+        <title>Iridesce ~ Games</title>
     </head>
     <body>
         <Header />
 
-        <main style="max-width:800px;margin:0 auto;padding:2rem;">
+        <main style="max-width:1000px;margin:0 auto;padding:2rem;">
             <h1>My Games</h1>
-            <p>A collection of indie games on itch.io.</p>
+            <p>Play my games on <a href="https://fainspirit.itch.io">itch.io</a>!</p>
 
             <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:var(--spacing-lg);margin-top:2rem;">
+                
+                <article style="background:white;border-radius:12px;padding:var(--spacing-md);box-shadow:0 4px 6px rgba(0,0,0,0.05);">
+                    <a href="https://fainspirit.itch.io/annetique" target="_blank" rel="noopener noreferrer">
+                        <span style="font-size:2rem;">🏴‍☠️</span>
+                        <h2>Annetique</h2>
+                        <p>Desc. WIP</p>
+                    </a>
+                </article>
+                
+                <article style="background:white;border-radius:12px;padding:var(--spacing-md);box-shadow:0 4px 6px rgba(0,0,0,0.05);">
+                    <a href="https://fainspirit.itch.io/shleepy" target="_blank" rel="noopener noreferrer">
+                        <span style="font-size:2rem;">🐑</span>
+                        <h2>Shleepy</h2>
+                        <p>Desc. WIP</p>
+                    </a>
+                </article>
+            
+                
                 <article style="background:white;border-radius:12px;padding:var(--spacing-md);box-shadow:0 4px 6px rgba(0,0,0,0.05);">
                     <a href="https://fainspirit.itch.io/fleurish" target="_blank" rel="noopener noreferrer">
                         <span style="font-size:2rem;">🌺</span>
                         <h2>Fleurish</h2>
-                        <p>Roguelike action RPG with flower upgrades.</p>
+                        <p>Desc. WIP</p>
                     </a>
                 </article>
 
@@ -31,7 +47,7 @@ export const title = 'Games - Startail';
                     <a href="https://fainspirit.itch.io/game-and-shock" target="_blank" rel="noopener noreferrer">
                         <span style="font-size:2rem;">⚡</span>
                         <h2>Game and Shock</h2>
-                        <p>Arcade game defending your monument.</p>
+                        <p>Desc. WIP</p>
                     </a>
                 </article>
 
@@ -39,7 +55,7 @@ export const title = 'Games - Startail';
                     <a href="https://fainspirit.itch.io/moonlight" target="_blank" rel="noopener noreferrer">
                         <span style="font-size:2rem;">🌙</span>
                         <h2>Moonlight</h2>
-                        <p>Action adventure with bad luck.</p>
+                        <p>Desc. WIP</p>
                     </a>
                 </article>
 
@@ -47,9 +63,10 @@ export const title = 'Games - Startail';
                     <a href="https://fainspirit.itch.io/rgbee" target="_blank" rel="noopener noreferrer">
                         <span style="font-size:2rem;">🎨</span>
                         <h2>RGBee</h2>
-                        <p>Puzzle game turning off colors.</p>
+                        <p>Desc. WIP</p>
                     </a>
                 </article>
+                
             </div>
         </main>
 
