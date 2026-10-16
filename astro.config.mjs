@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'iridesce.art',
+  site: 'https://iridesce.art',
 
   outDir: './docs',
 });
