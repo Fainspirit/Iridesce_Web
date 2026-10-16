@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  // Site configuration
-  site: 'https://startail.github.io/iridesce',
+  site: 'https://fainspirit.github.io/iridesce',
+
+  outDir: './docs',
 });
