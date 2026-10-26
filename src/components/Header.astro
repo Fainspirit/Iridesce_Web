@@ -5,7 +5,7 @@ export const title = 'Iridesce';
 ---
 
 <header class="header">
-    <a href="/" class="logo">{`Iridesce`}</a>
+    <a href="/" class="logo">Iridesce</a>
     <nav class="nav">
         <ul>
             <li><a href="/games/">Games</a></li>
@@ -18,3 +18,46 @@ export const title = 'Iridesce';
 </header>
 
 <main class="content"></main>
+
+<style>
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md) var(--spacing-xl);
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 300;
+    font-family: var(--font-fleur-de-leah);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary), var(--color-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.logo:hover {
+    filter: brightness(1.1);
+    font-weight: 700;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: var(--spacing-md);
+}
+
+.nav a {
+    font-weight: 500;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 8px;
+    transition: all var(--transition-fast);
+}
+
+.nav a:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
+</style>

@@ -10,6 +10,8 @@ echo Open http://localhost:4321 to preview your site
 echo Press Ctrl+C in another window to stop the server
 echo.
 
-npm run dev
+npm run dev --verbose
 
 endlocal
+
+pause
