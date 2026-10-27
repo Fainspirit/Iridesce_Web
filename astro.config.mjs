@@ -5,10 +5,15 @@ export default defineConfig({
 
   outDir: './docs',
 
-  fonts: [{
-    name: 'Fleur De Leah',
-    style: 'normal',
-    weight: 400,
-    variable: '--font-fleur-de-leah'
-  }]
+  integrations: [
+    // Add font styles here if using external fonts
+    // Example for Google Fonts:
+    // import FontLoader from 'unplugin-fonts/astro';
+    // import { Outfit } from '@unocss/preset-unocss';
+    // FontLoader({
+    //   families: [
+    //     { name: 'Fleur De Leah', subset: ['latin'] },
+    //  ]
+    // })
+  ]
 });
