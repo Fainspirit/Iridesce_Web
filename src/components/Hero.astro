@@ -5,48 +5,112 @@ const greeting = "Hello!";
 ---
 
 <section class="hero landing-hero">
-    <h1>Oh, hi!</h1>
-    <p>This is my website for art, dev blogs, games, tools, and more!</p>
+    <div style="height: 4vh;"></div>
+    <a href="/games/" class="big-button">Game Dev</a>
+    <a href="/d_and_d/" class="big-button">Roleplaying</a>
+    <div style="height: 4vh;"></div>
+    <a href="/gallery/" class="big-button">Art</a>
+    <a href="/blog/" class="big-button">Writing</a>
+    <div style="height: 4vh;"></div>
+    <a href="/about/" class="big-button">About Me</a>
+    <div style="height: 4vh;"></div>
 
-    <div class="big-buttons">        
-        <a href="/games/" class="big-button">My Games</a>
-        <a href="/d_and_d/" class="big-button">D&D</a>
-        <a href="/gallery/" class="big-button">Art Gallery</a>
-        <a href="/blog/" class="big-button">Dev Blog</a>
-        <a href="/about/" class="big-button">About Me</a>
-    </div>
-    
+
 </section>
 
-
 <style>
-/* Big Buttons */
+/* 1. Define custom properties for smooth color transitions */
+@property --hero-color-1 { syntax: '<color>'; inherits: false; initial-value: transparent; }
+@property --hero-color-2 { syntax: '<color>'; inherits: false; initial-value: transparent; }
+@property --hero-color-3 { syntax: '<color>'; inherits: false; initial-value: transparent; }
+@property --hero-color-4 { syntax: '<color>'; inherits: false; initial-value: transparent; }
+@property --hero-color-5 { syntax: '<color>'; inherits: false; initial-value: transparent; }
+
+/* 2. Full-height Hero Section Layout */
+.hero.landing-hero {
+    height: 100vh;
+    display: flex;
+    overflow: hidden; /* Clips anything trying to escape the screen */
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* 3. Vertical Button Stack Container */
 .big-buttons {
     display: flex;
-    flex-wrap: wrap;
-    gap: var(--spacing-md);
-    justify-content: center;
-    margin-top: var(--spacing-xl);
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
 }
 
+/* 4. Individual Button Styles */
 .big-button {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background: linear-gradient(-135deg, gray, black, gray);
-    color: white;
-    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+    min-height: 150px; /* Forces every button to be at least 80px tall by default */
+
+    /* Starting padding (will expand on hover) */
+    padding: -0.5rem 0rem;
+
+    /* Top and bottom borders only */
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: none;
+    border-right: none;
+
+    /* Base color-shifting gradient */
+    background: linear-gradient(
+        90deg, 
+        var(--hero-color-1),
+        var(--hero-color-2),
+        var(--hero-color-3),
+        var(--hero-color-4),
+        var(--hero-color-5)
+        );
+    background-size: 100% 50%;
+
+    color: var(--color-text);
+    font-size: 2rem;
     font-weight: 600;
-    border-radius: 999px;
     text-decoration: none;
-    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    
+    /* Smooth transitions for movement, shadow, padding, borders, and colors */
+    transition: 
+        transform var(--transition-normal), 
+        box-shadow var(--transition-normal),
+        padding 0.3s ease,
+        flex 0.3s ease,
+        border-color 0.1s ease,
+        --hero-color-1 1s ease, 
+        --hero-color-2 2s ease, 
+        --hero-color-3 3s ease, 
+        --hero-color-4 4s ease, 
+        --hero-color-5 5s ease;
 }
 
+/* 5. Hover State */
 .big-button:hover {
-    #transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(236, 72, 153, 0.3);
-    color: black;
+    /*flex: 1.5;*/
+
+    /* Trigger the colorful gradient shift */
+    --hero-color-1: yellow;
+    --hero-color-2: pink;
+    --hero-color-3: cyan;
+    --hero-color-4: lime;
+    --hero-color-5: purple;
+
+    /* Increase vertical padding to make the button taller */
+
+    /* Match border color to text/hover theme */
+    border-top-color: burlywood;
+    border-bottom-color: burlywood;
+
     font-weight: 600;
-    background: linear-gradient(-135deg, yellow, pink, cyan, lime);
-    transition: background-color 4s;
+    
+    backdrop-filter: blur(12px)
 }
 </style>

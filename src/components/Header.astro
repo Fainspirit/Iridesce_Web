@@ -25,7 +25,7 @@ export const title = 'Iridesce';
     justify-content: space-between;
     align-items: center;
     padding: 0 var(--spacing-xl);
-    background: linear-gradient(180deg, var(--color-dark) 60%, #001010);
+    background: linear-gradient(180deg, var(--color-highlight) 60%, var(--color-bg));
 }
 
 /* magic */
@@ -38,7 +38,7 @@ export const title = 'Iridesce';
 
 .logo {
     font-size: 5rem;
-    font-weight: 300;
+    font-weight: 400;
     font-family: var(--font-fleur-de-leah);
     display: inline-block;
     padding: 0.25em;
@@ -58,20 +58,20 @@ export const title = 'Iridesce';
     paint-order: stroke fill; 
 
     transition: 
-        --color-1 2s ease, 
-        --color-2 1s ease, 
+        --color-1 0s ease, 
+        --color-2 0.5s ease, 
         --color-3 1s ease, 
-        --color-4 1s ease, 
+        --color-4 1.5s ease, 
         --color-5 2s ease;
         font-size: 6rem ease;
 }
 
 .logo:hover {
-    --color-1: lime;
+    --color-1: lightgreen;
     --color-2: purple;
     --color-3: orange;
-    --color-4: blue;
-    --color-5: skyblue;
+    --color-4: skyblue;
+    --color-5: blue;
 
 }
 
@@ -85,14 +85,13 @@ export const title = 'Iridesce';
 }
 
 .nav a {
-    font-size: 2rem;
+    font-size: 1.5rem;
 
     font-weight: 500;
-    color: var(--color-text);
-    background: linear-gradient(90deg, var(--color-1), var(--color-2), var(--color-3), var(--color-4), var(--color-5));
+    background: silver;
+    background-clip: text;
 
     padding: var(--spacing-sm) var(--spacing-md);
-    border-radius: 8px;
     transition: all var(--transition-fast);
 }
 

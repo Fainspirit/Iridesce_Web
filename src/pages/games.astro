@@ -12,56 +12,55 @@ import Footer from '../components/Footer.astro';
     <body>
         <Header />
 
-        <main style="max-width:1000px;margin:0 auto;padding:2rem;">
+        <main class="content">
             <h1>My Games</h1>
-            <p>Play my games on <a href="https://fainspirit.itch.io">itch.io</a>!</p>
+            <p>Play my games on <a href="https://fainspirit.itch.io" target="_blank" rel="noopener noreferrer">itch.io</a>!</p>
 
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:var(--spacing-lg);margin-top:2rem;">
+            <div class="games-grid">
                 
-                <article style="background:white;border-radius:12px;padding:var(--spacing-md);box-shadow:0 4px 6px rgba(0,0,0,0.05);">
+                <article class="game-card">
                     <a href="https://fainspirit.itch.io/annetique" target="_blank" rel="noopener noreferrer">
-                        <span style="font-size:2rem;">🏴‍☠️</span>
+                        <span class="game-icon">🏴‍☠️</span>
                         <h2>Annetique</h2>
                         <p>Desc. WIP</p>
                     </a>
                 </article>
                 
-                <article style="background:white;border-radius:12px;padding:var(--spacing-md);box-shadow:0 4px 6px rgba(0,0,0,0.05);">
+                <article class="game-card">
                     <a href="https://heroofflames.itch.io/shleepy" target="_blank" rel="noopener noreferrer">
-                        <span style="font-size:2rem;">🐑</span>
+                        <span class="game-icon">🐑</span>
                         <h2>Shleepy</h2>
                         <p>Desc. WIP</p>
                     </a>
                 </article>
             
-                
-                <article style="background:white;border-radius:12px;padding:var(--spacing-md);box-shadow:0 4px 6px rgba(0,0,0,0.05);">
+                <article class="game-card">
                     <a href="https://fainspirit.itch.io/fleurish" target="_blank" rel="noopener noreferrer">
-                        <span style="font-size:2rem;">🌺</span>
+                        <span class="game-icon">🌺</span>
                         <h2>Fleurish</h2>
                         <p>Desc. WIP</p>
                     </a>
                 </article>
 
-                <article style="background:white;border-radius:12px;padding:var(--spacing-md);box-shadow:0 4px 6px rgba(0,0,0,0.05);">
+                <article class="game-card">
                     <a href="https://fainspirit.itch.io/game-and-shock" target="_blank" rel="noopener noreferrer">
-                        <span style="font-size:2rem;">⚡</span>
+                        <span class="game-icon">⚡</span>
                         <h2>Game and Shock</h2>
                         <p>Desc. WIP</p>
                     </a>
                 </article>
 
-                <article style="background:white;border-radius:12px;padding:var(--spacing-md);box-shadow:0 4px 6px rgba(0,0,0,0.05);">
+                <article class="game-card">
                     <a href="https://fainspirit.itch.io/moonlight" target="_blank" rel="noopener noreferrer">
-                        <span style="font-size:2rem;">🌙</span>
+                        <span class="game-icon">🌙</span>
                         <h2>Moonlight</h2>
                         <p>Desc. WIP</p>
                     </a>
                 </article>
 
-                <article style="background:white;border-radius:12px;padding:var(--spacing-md);box-shadow:0 4px 6px rgba(0,0,0,0.05);">
+                <article class="game-card">
                     <a href="https://fainspirit.itch.io/rgbee" target="_blank" rel="noopener noreferrer">
-                        <span style="font-size:2rem;">🎨</span>
+                        <span class="game-icon">🎨</span>
                         <h2>RGBee</h2>
                         <p>Desc. WIP</p>
                     </a>
@@ -71,5 +70,49 @@ import Footer from '../components/Footer.astro';
         </main>
 
         <Footer />
+
+        <style>
+            html, body {
+                height: auto !important;
+                min-height: 100vh !important;
+                overflow: auto !important;
+            }
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+            .content {
+                flex-grow: 1;
+                padding: var(--spacing-lg) var(--spacing-md);
+                max-width: 1200px;
+                width: 100%;
+                margin: 0 auto;
+            }
+            .games-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: var(--spacing-lg);
+                margin-top: 2rem;
+            }
+            .game-card {
+                background: var(--color-highlight);
+                border-radius: 12px;
+                padding: var(--spacing-md);
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+                transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+            }
+            .game-card:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+            }
+            .game-card a {
+                text-decoration: none;
+                color: inherit;
+                display: block;
+            }
+            .game-icon {
+                font-size: 2rem;
+            }
+        </style>
     </body>
 </html>

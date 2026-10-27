@@ -9,11 +9,11 @@ import Footer from '../components/Footer.astro';
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Iridesce ~ About</title>
-</title>
-    </head>
+
+</head>
     <body>
         <Header />
-
+        
         <main class="about-content">
             <h1>Fainspirit</h1>
             <p>📚 Worldbuilder ~ 🎨 Artist ~ 🎮 Dev</p>
@@ -23,21 +23,35 @@ import Footer from '../components/Footer.astro';
         <main class="about-content">
 
             <h1>Planned Content</h1>
-            <p>- Tag / filtering and search for Blog and Gallery pages</p>
-            <p>- Character explorer/builder for Fire Emblem: Fortune's Weave</p>
-            <p>- More nice visuals incl. paint effect</p>
-            <p>- Tab icon</p>
-            <p>- Fix the footer and figure out CSS more</p>
-            <p>- Add angular expanding "glass" sliders to the hero for each category!
-            <p>- Figure out how to make an embed happen</p>
-            <p>- Games card link to itch/steam/etc </p>
-            <p>- Add startaildev@gmail.com contact</p>
-            <p>- Make header sticky and maybe mobile friendly sizing</p>
-            <p>- Add proper TODO page</p>
-            <p>- Frosted glass visuals? Make top bar hollow glass until hover then glow?<\p>
-            <p>- Manually or automatically fetch thumbnails, desc, title for games page. Can I set it to build the pills dynamically using itch thumbnail?</p>
+            <li>Tag / filtering and search for Blog and Gallery pages</li>
+            <li> Character explorer/builder for Fire Emblem: Fortune's Weave</li>
+            <li> More nice visuals incl. paint effect</li>
+            <li class=done>- Tab icon</li>
+            <li> Fix the footer and figure out CSS more</li>
+            <li> Add angular expanding "glass" sliders to the hero for each category! (vertical list?)</li>   
+            <li> Figure out how to make an embed happen EDIT twitter card</li>
+            <li> Games card link to itch/steam/etc </li>
+            <li> Add startaildev@gmail.com contact</li>
+            <li class="done"> Make header sticky and maybe mobile friendly sizing</li>
+            <li> Add proper TODO page</li>
+            <li> Frosted glass visuals? Make top bar hollow glass until hover then glow?</li>
+            <li> Manually or automatically fetch thumbnails, desc, title for games page. Can I set it to build the pills dynamically using itch thumbnail?</li>
+            <li>Use the slug stuff to autogen d&d pages, characters, images, etc</li>
+            <li>Make the header seperator the gradient so it's more even</li>
         </main>
 
         <Footer />
     </body>
 </html>
+
+<style>
+  .about-content {
+    width: 50%; /* Takes up 50% of the parent container's width */
+    align-self: center
+  }
+
+  .done {
+    text-decoration: line-through;
+  }
+</style>
+

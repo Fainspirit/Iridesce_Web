@@ -9,16 +9,12 @@ let year = new Date().getFullYear();
 <style is:global>
     .footer {
         text-align: center;
-        padding: var(--spacing-lg) var(--spacing-xl);
-        background: var(--color-dark);
+        padding: var(--spacing-md) var(--spacing-xl);
+        background: var(--color-highlight);
         color: white;
         font-size: 0.875rem;
-        margin-top: auto;
-        margin-bottom: auto;
-
-        position: fixed;
-        bottom: 0;
-        left: 0;
+        
+        /* Removed position: fixed so it doesn't overlap */
         width: 100%;
     }
 

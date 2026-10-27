@@ -6,11 +6,11 @@
     --font-fleur-de-leah: 'Fleur De Leah', sans-serif;
 
     /* Iridescent color palette - shifting blues/purples */
-    --color-text: #f2ddde;   
+    --color-text: white;   
     --color-secondary: #8b5cf6; 
     --color-accent: #ec4899;    
-    --color-dark: #002526;     
-    --color-bg: #001010;     
+    --color-highlight: #002526;     
+    --color-bg: #000505;     
 
     /* Spacing scale */
     --spacing-xs: 0.25rem;
