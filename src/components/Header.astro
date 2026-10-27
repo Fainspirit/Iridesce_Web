@@ -17,7 +17,6 @@ export const title = 'Iridesce';
     </nav>
 </header>
 
-<main class="content"></main>
 
 <style>
 /* Header */
@@ -25,23 +24,59 @@ export const title = 'Iridesce';
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--spacing-md) var(--spacing-xl);
+    padding: 0 var(--spacing-xl);
+    background: linear-gradient(180deg, var(--color-dark) 60%, #001010);
 }
 
+/* magic */
+/* Define the custom color variables for the animation */
+@property --color-1 { syntax: '<color>'; inherits: false; initial-value: silver; }
+@property --color-2 { syntax: '<color>'; inherits: false; initial-value: gray; }
+@property --color-3 { syntax: '<color>'; inherits: false; initial-value: white; }
+@property --color-4 { syntax: '<color>'; inherits: false; initial-value: gray; }
+@property --color-5 { syntax: '<color>'; inherits: false; initial-value: silver; }
+
 .logo {
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 300;
     font-family: var(--font-fleur-de-leah);
-    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary), var(--color-accent));
+    display: inline-block;
+    padding: 0.25em;
+
+    /* 1. Base Gradient Definition */
+    background: linear-gradient(90deg, var(--color-1), var(--color-2), var(--color-3), var(--color-4), var(--color-5));
+    background-repeat: no-repeat;
+
+    /* 2. Core Fix: Shrink and center the gradient to match the text bounding box, bypassing padding */
+    background-position: center;
+
+    /* 3. Text Clipping */
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
+
+    paint-order: stroke fill; 
+
+    transition: 
+        --color-1 2s ease, 
+        --color-2 1s ease, 
+        --color-3 1s ease, 
+        --color-4 1s ease, 
+        --color-5 2s ease;
+        font-size: 6rem ease;
 }
 
 .logo:hover {
-    filter: brightness(1.1);
-    font-weight: 700;
+    --color-1: lime;
+    --color-2: purple;
+    --color-3: orange;
+    --color-4: blue;
+    --color-5: skyblue;
+
 }
+
+
+
 
 .nav ul {
     display: flex;
@@ -50,14 +85,24 @@ export const title = 'Iridesce';
 }
 
 .nav a {
+    font-size: 2rem;
+
     font-weight: 500;
+    color: var(--color-text);
+    background: linear-gradient(90deg, var(--color-1), var(--color-2), var(--color-3), var(--color-4), var(--color-5));
+
     padding: var(--spacing-sm) var(--spacing-md);
     border-radius: 8px;
     transition: all var(--transition-fast);
 }
 
 .nav a:hover {
-    background-color: var(--color-primary);
-    color: white;
+    --color-1: lime;
+    --color-2: purple;
+    --color-3: orange;
+    --color-4: blue;
+    --color-5: skyblue;
+
+
 }
 </style>
