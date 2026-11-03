@@ -1,0 +1,10 @@
+{
+  "astro-composer:convert-wikilinks-astro": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "L"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "defaultTemplate": "---\ntitle: \"{{title}}\"\ndate: {{date}}\ntags: []\n---\n",
+  "autoInsertProperties": true,
+  "dateFormat": "YYYY-MM-DD",
+  "enableCopyHeadingLink": true,
+  "copyHeadingLinkFormat": "obsidian",
+  "addTrailingSlashToLinks": false,
+  "enableOpenTerminalCommand": false,
+  "terminalProjectRootPath": "",
+  "terminalApplicationName": "",
+  "enableTerminalDebugLogging": false,
+  "enableTerminalRibbonIcon": false,
+  "enableOpenConfigFileCommand": false,
+  "configFilePath": "",
+  "enableConfigRibbonIcon": false,
+  "contentTypes": [
+    {
+      "id": "content-1793675956743",
+      "name": "Wiki",
+      "folder": "mythos",
+      "linkBasePath": "",
+      "template": "---\nlayout: \"src/layouts/wiki_page.astro\"\ntitle: \"{{title}}\"\n---\n",
+      "enabled": true,
+      "creationMode": "file",
+      "fileNameFormat": "kebab-case",
+      "indexFileName": "",
+      "ignoreSubfolders": false,
+      "enableUnderscorePrefix": false,
+      "useMdxExtension": false,
+      "modifiedDateField": "",
+      "collapsed": true
+    }
+  ],
+  "migrationCompleted": true,
+  "helpButtonReplacement": {
+    "enabled": false,
+    "commandId": "edit-astro-config",
+    "iconId": "rocket"
+  },
+  "showMdxFilesInExplorer": false,
+  "processBackgroundFileChanges": true,
+  "externalNoteHandling": "prompt",
+  "syncDraftDate": false,
+  "draftDetectionMode": "property",
+  "draftProperty": "",
+  "draftLogic": "true-is-draft",
+  "publishDateField": "",
+  "renameOnTitleClick": false,
+  "showFolderNameAsInlineTitle": false
+}

@@ -9,7 +9,7 @@ export const title = 'Iridesce';
     <nav class="nav">
         <ul>
             <li><a href="/games/">Games</a></li>
-            <li><a href="/d_and_d/">D&D</a></li>
+            <li><a href="/mythos/">Mythos</a></li>
             <li><a href="/gallery/">Gallery</a></li>
             <li><a href="/blog/">Blog</a></li>
             <li><a href="/about/">About</a></li>
@@ -24,9 +24,16 @@ export const title = 'Iridesce';
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 var(--spacing-x);
+    
+    /* 
+       First value: Shorter vertically (reduced to -sm)
+       Second value: Further from the edge horizontally (increased to -lg)
+    */
+    padding: 0 var(--spacing-xl);
+    
     background: var(--color-primary);
 }
+
 
 /* magic */
 /* Define the custom color variables for the animation */
@@ -43,28 +50,35 @@ export const title = 'Iridesce';
     display: inline-block;
     padding: 0.25em;
 
-    /* 1. Base Gradient Definition */
+    /* Base Gradient & Clipping */
     background: linear-gradient(90deg, var(--color-1), var(--color-2), var(--color-3), var(--color-4), var(--color-5));
     background-repeat: no-repeat;
-
-    /* 2. Core Fix: Shrink and center the gradient to match the text bounding box, bypassing padding */
     background-position: center;
-
-    /* 3. Text Clipping */
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: var(--color-text);
+    -webkit-text-fill-color: transparent;
 
-    paint-order: stroke fill; 
-    
+  
+
+    /* NEW: Drop shadow pushes the outline out. 
+       Format: X-offset Y-offset Blur-radius Color */
+    filter: 
+      drop-shadow(1px 1px 0px var(--color-text))
+      drop-shadow(-1px -1px 0px var(--color-text))
+      drop-shadow(1px -1px 0px var(--color-text))
+      drop-shadow(-1px 1px 0px var(--color-text));
+
+    /* 4. Smooth Transitions */
     transition: 
         --color-1 0s ease, 
         --color-2 0.5s ease, 
         --color-3 1s ease, 
         --color-4 1.5s ease, 
-        --color-5 2s ease;
-        font-size: 6rem ease;
+        --color-5 2s ease,
+        font-size 0.5s ease; /* FIX 3: Fixed broken syntax (removed '6rem' from property name) */
 }
+
+
 
 .logo:hover {
     --color-1: lightgreen;

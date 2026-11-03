@@ -1,5 +1,5 @@
 {
   "useMarkdownLinks": false,
-  "newLinkFormat": "shortest",
+  "newLinkFormat": "absolute",
   "alwaysUpdateLinks": true
 }
