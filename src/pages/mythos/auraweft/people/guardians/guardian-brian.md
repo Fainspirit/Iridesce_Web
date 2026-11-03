@@ -1,6 +1,6 @@
 ---
-layout: "src/layouts/wiki_page.astro"
-title: "brian"
+layout: src/layouts/wiki_page.astro
+title: Guardian Brian
 ---
 Guardian of [[mythos/auraweft/locations/cambrook|cambrook]]
 

@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mythos/auraweft/people/asterum-students/artificer-hero.md",
+                "file": "mythos/auraweft/people/guardians/guardian-brian.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "artificer-hero"
+              "title": "guardian-brian"
             }
           }
         ],
@@ -217,14 +217,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "ec3b9c94e142a4e4",
+  "active": "26abc08b433ed2f3",
   "lastOpenFiles": [
+    "mythos/auraweft/locations/cambrook.md",
+    "mythos/auraweft/people/guardians/guardian-brian.md",
+    "mythos/auraweft/people/asterum-students/artificer-hero.md",
     "mythos/auraweft/people/asterum-students/golemancer_twizty.md",
     "mythos/auraweft/people/inquisitors/granny-gertrude.md",
     "mythos/auraweft/people/inquisitors/lyssa.md",
     "mythos/auraweft/people/inquisitors/tourmal.md",
-    "mythos/auraweft/locations/cambrook.md",
-    "mythos/auraweft/people/guardians/guardian brian.md",
     "mythos/auraweft/locations/cities/aurkas/aurkas-magic-council.md",
     "mythos/auraweft/locations/cities/aurkas/aurelions-church.md",
     "mythos/auraweft/locations/cities/aurkas.md",
@@ -250,7 +251,6 @@
     "mythos/auraweft/people/inquisitors",
     "mythos/auraweft/locations/cities/ouldiv.md",
     "mythos/auraweft/locations/cities/mocom.md",
-    "mythos/auraweft/locations/cities/luma.md",
     "mythos/auraweft/people/asterum/people",
     "mythos.astro",
     "mythos/auraweft/people/asterum/technology",
