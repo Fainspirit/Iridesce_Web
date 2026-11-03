@@ -5,13 +5,19 @@
     /* Use Google Fonts for the logo */
     --font-fleur-de-leah: 'Fleur De Leah', sans-serif;
 
-    /* Iridescent color palette - shifting blues/purples */
-    --color-text: white;   
-    --color-secondary: #8b5cf6; 
-    --color-accent: #ec4899;    
-    --color-highlight: #002526;     
-    --color-bg: #000505;     
-
+    --color-text: #1e2858;   
+    --color-bg: #ffe6dB;    
+    --color-primary: #f08787;     
+    --color-secondary: #dccceb; 
+    --color-accent: #e5609c;   
+    /*
+    --color-text: #1e2757;   
+    --color-bg: #f6fffc;    
+    --color-primary: #efb2b2;     
+    --color-secondary: #dccceb; 
+    --color-accent: #e5619d; 
+    */
+    
     /* Spacing scale */
     --spacing-xs: 0.25rem;
     --spacing-sm: 0.5rem;

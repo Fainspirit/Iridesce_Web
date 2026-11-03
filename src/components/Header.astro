@@ -24,8 +24,8 @@ export const title = 'Iridesce';
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 var(--spacing-xl);
-    background: linear-gradient(180deg, var(--color-highlight) 60%, var(--color-bg));
+    padding: 0 var(--spacing-x);
+    background: var(--color-primary);
 }
 
 /* magic */
@@ -37,8 +37,8 @@ export const title = 'Iridesce';
 @property --color-5 { syntax: '<color>'; inherits: false; initial-value: silver; }
 
 .logo {
-    font-size: 5rem;
-    font-weight: 400;
+    font-size: 3rem;
+    font-weight: 500;
     font-family: var(--font-fleur-de-leah);
     display: inline-block;
     padding: 0.25em;
@@ -53,10 +53,10 @@ export const title = 'Iridesce';
     /* 3. Text Clipping */
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: var(--color-text);
 
     paint-order: stroke fill; 
-
+    
     transition: 
         --color-1 0s ease, 
         --color-2 0.5s ease, 
@@ -88,7 +88,7 @@ export const title = 'Iridesce';
     font-size: 1.5rem;
 
     font-weight: 500;
-    background: silver;
+    color: var(--color-text);
     background-clip: text;
 
     padding: var(--spacing-sm) var(--spacing-md);

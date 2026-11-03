@@ -14,13 +14,13 @@ import Footer from '../components/Footer.astro';
     <body>
         <Header />
         
-        <main class="about-content">
+        <main class="content">
             <h1>Fainspirit</h1>
             <p>📚 Worldbuilder ~ 🎨 Artist ~ 🎮 Dev</p>
             <p>I like to spend my free time playing games, making games and silly doodles, or roleplaying with friends!</p>
         </main>
         
-        <main class="about-content">
+        <main class="content">
 
             <h1>Planned Content</h1>
             <li>Tag / filtering and search for Blog and Gallery pages</li>
@@ -38,6 +38,7 @@ import Footer from '../components/Footer.astro';
             <li> Manually or automatically fetch thumbnails, desc, title for games page. Can I set it to build the pills dynamically using itch thumbnail?</li>
             <li>Use the slug stuff to autogen d&d pages, characters, images, etc</li>
             <li>Make the header seperator the gradient so it's more even</li>
+            <li>Make the footer fixed size so I can have scroll bar that goes "under" it (?) or can I scroll the content?</li>
         </main>
 
         <Footer />
@@ -45,11 +46,6 @@ import Footer from '../components/Footer.astro';
 </html>
 
 <style>
-  .about-content {
-    width: 50%; /* Takes up 50% of the parent container's width */
-    align-self: center
-  }
-
   .done {
     text-decoration: line-through;
   }

@@ -25,6 +25,8 @@ body {
 
 .content {
     flex-grow: 1;
+    width: 50%; /* Takes up 50% of the parent container's width */
+    align-self: center
 }
 
 a {
