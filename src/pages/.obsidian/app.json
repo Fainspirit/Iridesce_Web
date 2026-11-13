@@ -1,5 +1,6 @@
 {
   "useMarkdownLinks": false,
   "newLinkFormat": "absolute",
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "useTab": true
 }

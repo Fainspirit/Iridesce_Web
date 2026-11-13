@@ -17,31 +17,23 @@ export const title = 'Iridesce';
     </nav>
 </header>
 
-
 <style>
-/* Header */
+/* Header Container */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: var(--spacing-sm) var(--spacing-xl);
     
-    /* 
-       First value: Shorter vertically (reduced to -sm)
-       Second value: Further from the edge horizontally (increased to -lg)
-    */
-    padding: 0 var(--spacing-xl);
-    
-    background: var(--color-primary);
+    /* Transparent or light background lets the watercolor texture show through */
+    background: var(--color-bg); 
+    border-bottom: 2px solid var(--color-accent);
 }
 
-
-/* magic */
-/* Define the custom color variables for the animation */
-@property --color-1 { syntax: '<color>'; inherits: false; initial-value: silver; }
-@property --color-2 { syntax: '<color>'; inherits: false; initial-value: gray; }
-@property --color-3 { syntax: '<color>'; inherits: false; initial-value: white; }
-@property --color-4 { syntax: '<color>'; inherits: false; initial-value: gray; }
-@property --color-5 { syntax: '<color>'; inherits: false; initial-value: silver; }
+/* Custom Properties for Iridescent Logo Shift */
+@property --logo-col-1 { syntax: '<color>'; inherits: false; initial-value: #C59B27; }
+@property --logo-col-2 { syntax: '<color>'; inherits: false; initial-value: #1B4332; }
+@property --logo-col-3 { syntax: '<color>'; inherits: false; initial-value: #52796F; }
 
 .logo {
     font-size: 3rem;
@@ -49,73 +41,74 @@ export const title = 'Iridesce';
     font-family: var(--font-fleur-de-leah);
     display: inline-block;
     padding: 0.25em;
+    text-decoration: none;
 
-    /* Base Gradient & Clipping */
-    background: linear-gradient(90deg, var(--color-1), var(--color-2), var(--color-3), var(--color-4), var(--color-5));
+    /* Gold-to-Jade gradient text fill */
+    background: linear-gradient(135deg, var(--logo-col-1), var(--logo-col-2), var(--logo-col-3));
     background-repeat: no-repeat;
-    background-position: center;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-  
+    /* Subtle single ink drop-shadow to separate script text from paper background */
+    filter: drop-shadow(0 2px 4px rgba(30, 37, 36, 0.15));
 
-    /* NEW: Drop shadow pushes the outline out. 
-       Format: X-offset Y-offset Blur-radius Color */
-    filter: 
-      drop-shadow(1px 1px 0px var(--color-text))
-      drop-shadow(-1px -1px 0px var(--color-text))
-      drop-shadow(1px -1px 0px var(--color-text))
-      drop-shadow(-1px 1px 0px var(--color-text));
-
-    /* 4. Smooth Transitions */
     transition: 
-        --color-1 0s ease, 
-        --color-2 0.5s ease, 
-        --color-3 1s ease, 
-        --color-4 1.5s ease, 
-        --color-5 2s ease,
-        font-size 0.5s ease; /* FIX 3: Fixed broken syntax (removed '6rem' from property name) */
+        --logo-col-1 0.4s ease, 
+        --logo-col-2 0.4s ease, 
+        --logo-col-3 0.4s ease,
+        transform 0.3s ease;
 }
-
-
 
 .logo:hover {
-    --color-1: lightgreen;
-    --color-2: purple;
-    --color-3: orange;
-    --color-4: skyblue;
-    --color-5: blue;
-
+    --logo-col-1: #E5C158;
+    --logo-col-2: #3E7C74;
+    --logo-col-3: #C59B27;
+    transform: scale(1.02);
 }
 
-
-
-
+/* Navigation */
 .nav ul {
     display: flex;
     list-style: none;
-    gap: var(--spacing-md);
+    gap: var(--spacing-sm);
+    margin: 0;
+    padding: 0;
 }
 
 .nav a {
-    font-size: 1.5rem;
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    letter-spacing: 0.05em; /* Slightly wider spacing elevates the luxury feel */
 
-    font-weight: 500;
-    color: var(--color-text);
-    background-clip: text;
-
+    font-weight: 600;
+    color: var(--color-text); /* Dark Sumi Ink for clear readability on paper */
+    text-decoration: none;
     padding: var(--spacing-sm) var(--spacing-md);
-    transition: all var(--transition-fast);
+    position: relative;
+    display: inline-block;
+    transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+/* Clean Underline & Glow Accent on Hover */
+.nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-accent);
+    transition: width var(--transition-fast) ease, left var(--transition-fast) ease;
+    border-radius: 2px;
 }
 
 .nav a:hover {
-    --color-1: lime;
-    --color-2: purple;
-    --color-3: orange;
-    --color-4: blue;
-    --color-5: skyblue;
+    color: var(--color-primary); /* Deep Jade on hover */
+}
 
-
+.nav a:hover::after {
+    width: 80%;
+    left: 10%;
 }
 </style>

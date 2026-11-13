@@ -1,15 +1,40 @@
 /* Iridesce - Design Tokens */
-@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Fleur+De+Leah:wght@400;700&display=swap');
 
 :root {
-    /* Use Google Fonts for the logo */
-    --font-fleur-de-leah: 'Fleur De Leah', sans-serif;
+    /* Google Fonts */
+    --font-logo: 'Fleur De Leah', cursive;
+    --font-heading: 'Cinzel', serif;
+    --font-nav: 'Cormorant Garamond', serif;
+    --font-body: 'EB Garamond', Georgia, serif;
 
-    --color-text: #1e2858;   
-    --color-bg: #ffe6dB;    
-    --color-primary: #f08787;     
-    --color-secondary: #dccceb; 
-    --color-accent: #e5609c;   
+    /* Font Sizes */
+    --font-size-sm: 0.875rem;   /* ~14px */
+    --font-size-base: 1.125rem; /* ~18px */
+    --font-size-md: 1.35rem;    /* ~21px */
+    --font-size-lg: 1.75rem;    /* ~28px */
+    --font-size-xl: 2.5rem;     /* ~40px */
+    --font-size-logo: 3rem;     /* ~48px */
+
+    /* Font Weights */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Letter Spacing */
+    --tracking-tight: -0.02em;
+    --tracking-normal: 0em;
+    --tracking-wide: 0.05em;
+    --tracking-widest: 0.1em;
+
+    /* Colors */
+    --color-bg: #F5F2EB;
+    --color-text: #171d1c;
+    --color-primary: #1B4332;
+    --color-secondary: #52796F;
+    --color-accent: #C59B27;
+
     /*
     --color-text: #1e2757;   
     --color-bg: #f6fffc;    
