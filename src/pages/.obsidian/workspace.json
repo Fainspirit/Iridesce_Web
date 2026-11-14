@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mythos/aurea/stories/auraweft.md",
+                "file": "mythos/aurea.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "auraweft"
+              "title": "aurea"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Welcome.md",
+                "file": "mythos/aurea.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,8 +174,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -190,13 +189,14 @@
   },
   "active": "aee890c57f91e724",
   "lastOpenFiles": [
+    "mythos/aurea/languages.md",
+    "mythos/aurea.md",
+    "mythos/aurea/stories/auraweft.md",
     "mythos/aurea/stories/auraweft/sessions.md",
     "mythos/aurea/stories/auraweft/sessions/001-welcome-to-asterum-academy.md",
     "mythos/aurea/people/asterum/asterum academy/map.md",
     "mythos/aurea/people/inquisitors/youthful-vigor.md",
-    "mythos/aurea/languages.md",
     "Pasted image 20261113210859.png",
-    "mythos/aurea.md",
     "mythos/aurea/locations/cities/ouldiv.md",
     "mythos/aurea/people/asterum/seraphina-gale.md",
     "mythos/aurea/people/asterum/zephiel-gale.md",
@@ -217,7 +217,6 @@
     "mythos/aurea/people/humans.md",
     "mythos/aurea/people/asterum/technology/chameleon.md",
     "mythos/aurea/people/asterum/technology/vessel.md",
-    "mythos/aurea/stories/auraweft.md",
     "mythos/aurea/people/asterum/asterum academy",
     "mythos/aurea/stories",
     "Untitled.base",
