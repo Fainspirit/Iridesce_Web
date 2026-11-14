@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mythos/aurea.md",
+                "file": "mythos/aurea/stories/auraweft/sessions/001-welcome-to-asterum-academy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "aurea"
+              "title": "001-welcome-to-asterum-academy"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mythos/aurea.md",
+                "file": "mythos/aurea/stories/auraweft/sessions/001-welcome-to-asterum-academy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -189,11 +189,12 @@
   },
   "active": "aee890c57f91e724",
   "lastOpenFiles": [
-    "mythos/aurea/languages.md",
-    "mythos/aurea.md",
-    "mythos/aurea/stories/auraweft.md",
-    "mythos/aurea/stories/auraweft/sessions.md",
+    "mythos/aurea/locations/crater-lake.md",
     "mythos/aurea/stories/auraweft/sessions/001-welcome-to-asterum-academy.md",
+    "mythos/aurea/stories/auraweft/sessions.md",
+    "mythos/aurea/stories/auraweft.md",
+    "mythos/aurea.md",
+    "mythos/aurea/languages.md",
     "mythos/aurea/people/asterum/asterum academy/map.md",
     "mythos/aurea/people/inquisitors/youthful-vigor.md",
     "Pasted image 20261113210859.png",
@@ -221,7 +222,6 @@
     "mythos/aurea/stories",
     "Untitled.base",
     "mythos/auraweft.md",
-    "mythos/aurea/aura.md",
     "mythos/auraweft/locations/Western Plains",
     "mythos/aurea/people/guardians",
     "mythos/aurea/locations",
