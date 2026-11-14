@@ -8,63 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f8bb3c42e54e4c3a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mythos/auraweft/locations.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "locations"
-            }
-          },
-          {
-            "id": "ec3b9c94e142a4e4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mythos/aurea/people/humans.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "humans"
-            }
-          },
-          {
             "id": "aee890c57f91e724",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mythos/aurea/people.md",
+                "file": "mythos/aurea/stories/auraweft.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "people"
-            }
-          },
-          {
-            "id": "231124948c0cdf94",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mythos/aurea/people/asterum/technology/vessel.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "vessel"
+              "title": "auraweft"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -233,15 +190,31 @@
   },
   "active": "aee890c57f91e724",
   "lastOpenFiles": [
-    "mythos/aurea/people/asterum.md",
-    "mythos/aurea/people.md",
+    "mythos/aurea/stories/auraweft/sessions.md",
+    "mythos/aurea/stories/auraweft/sessions/001-welcome-to-asterum-academy.md",
+    "mythos/aurea/people/asterum/asterum academy/map.md",
+    "mythos/aurea/people/inquisitors/youthful-vigor.md",
+    "mythos/aurea/languages.md",
+    "Pasted image 20261113210859.png",
     "mythos/aurea.md",
-    "mythos/aurea/people/asterum/zephiel-gale.md",
-    "mythos/aurea/people/asterum/asterum-academy.md",
+    "mythos/aurea/locations/cities/ouldiv.md",
     "mythos/aurea/people/asterum/seraphina-gale.md",
+    "mythos/aurea/people/asterum/zephiel-gale.md",
+    "mythos/aurea/people/asterum-students/khar-lo-flameheart.md",
+    "mythos/aurea/locations/cities/creblen.md",
+    "mythos/aurea/locations/cities/sobat.md",
+    "mythos/aurea/people/asterum/asterum-academy.md",
+    "mythos/aurea/IMG_20261109_212105411_HDR.jpg",
+    "mythos/aurea/people/asterum-students/brim.md",
+    "mythos/aurea/locations/the-abyss.md",
+    "mythos/aurea/locations.md",
+    "mythos/aurea/people/asterum/augustus-rain.md",
+    "mythos/aurea/stories/auraweft/sessions",
+    "mythos/aurea/stories/auraweft",
+    "mythos/aurea/people.md",
+    "mythos/aurea/people/asterum.md",
     "mythos/aurea/people/chimera.md",
     "mythos/aurea/people/humans.md",
-    "mythos/aurea/people/asterum/augustus-rain.md",
     "mythos/aurea/people/asterum/technology/chameleon.md",
     "mythos/aurea/people/asterum/technology/vessel.md",
     "mythos/aurea/stories/auraweft.md",
@@ -249,25 +222,11 @@
     "mythos/aurea/stories",
     "Untitled.base",
     "mythos/auraweft.md",
-    "mythos/aurea/locations.md",
     "mythos/aurea/aura.md",
-    "mythos/aurea/people/gods/aurelion.md",
-    "mythos/aurea/people/guardians/guardian-brian.md",
-    "mythos/aurea/locations/cambrook.md",
-    "mythos/aurea/people/asterum-students/golemancer_twizty.md",
-    "mythos/aurea/people/inquisitors/granny-gertrude.md",
-    "mythos/aurea/people/inquisitors/lyssa.md",
-    "mythos/aurea/people/inquisitors/tourmal.md",
-    "mythos/aurea/locations/cities/aurkas/aurkas-magic-council.md",
-    "mythos/aurea/locations/cities/aurkas/aurelions-church.md",
-    "mythos/aurea/locations/cities/aurkas.md",
-    "mythos/aurea/people/inquisitors.md",
     "mythos/auraweft/locations/Western Plains",
     "mythos/aurea/people/guardians",
     "mythos/aurea/locations",
     "mythos/auraweft/cities/Untitled",
-    "mythos/aurea/people/inquisitors",
-    "mythos/auraweft/people/asterum/people",
-    "mythos.astro"
+    "mythos/aurea/people/inquisitors"
   ]
 }

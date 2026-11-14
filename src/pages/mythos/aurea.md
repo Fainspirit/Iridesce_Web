@@ -9,3 +9,7 @@ title: "Aurea"
 ## [[mythos/aurea/people|People]]
 
 ## [[mythos/aurea/locations|Locations]]
+
+[[mythos/aurea/languages|languages]]
+
+![Temporary map of Aurea](/mythos/aurea/IMG_20261109_212105411_HDR.jpg)

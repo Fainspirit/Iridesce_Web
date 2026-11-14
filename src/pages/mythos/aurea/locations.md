@@ -25,3 +25,5 @@ Cities:
 Towns:
 
 [[mythos/aurea/locations/cambrook|cambrook]]
+
+![[mythos/aurea/IMG_20261109_212105411_HDR.jpg]]
